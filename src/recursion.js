@@ -51,15 +51,13 @@ var arraySum = function(array) {
 
 // 4. Check if a number is even.
 var isEven = function(n) {
-	let count = 0
-	if (n / count === 0){
+	if (n / 2 === 0){
 		return true;
-	} else if (Number.isInteger(n / count)) {
+	} else if (Number.isInteger(n / 2)) {
 		return true;
-	} else if (!Number.isInteger(n / count)) {
+	} else if (!Number.isInteger(n / 2)) {
 		return false;
 	} else {
-		count += 1
 		return (isEven(n))
 	}
 };
